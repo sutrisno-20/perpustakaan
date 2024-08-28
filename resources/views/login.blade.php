@@ -41,7 +41,7 @@
                     <button class="btn btn-primary form-control" type="submit">Login</button>
                 </div>
                 <div class="text-center">
-                    <a href="register">Sign Up</a>
+                    Do you not have an account? <a href="register">Sign Up</a>
                 </div>
             </form>
         </div>

@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
 
 class AuthController extends Controller
@@ -31,12 +33,14 @@ class AuthController extends Controller
 
             // check, is user actived?
             if(Auth::user()->status != 'active'){
-                // return redirect('login')->with('status', 'your account has not actived !');
+                Auth::logout();
+                $r->session()->invalidate();
+                $r->session()->regenerateToken();
                 Session::flash('status', 'failed');
-                Session::flash('message', 'your account has not actived !');
+                Session::flash('message', 'your account has not actived! Please Contact Admin');
                 return redirect('/login');
             }
-            
+
             $r->session()->regenerate();
             if(Auth::User()->role_id == 1){
                 return redirect('dashboard');
@@ -51,7 +55,27 @@ class AuthController extends Controller
         return redirect('/login');
     }
 
+    // logout
+    public function logout(Request $r) {
+        Auth::logout();
+        $r->session()->invalidate();
+        $r->session()->regenerateToken();
+        return redirect('login');
+    }
 
+    public function registerProcess(Request $request) {
+        // dd($r->all());
+        $validated = $request->validate([
+            'username' => 'required|unique:users|max:255|min:3',
+            'password' => 'required',
+            'phone' => 'max:15',
+            'address' => 'required',
+        ]);
+        $request['password'] = Hash::make($request->password);
+        $user = User::create($request->all());
+        Session::flash('status','success');
+        Session::flash('message', 'Success Register, wait admin to approve your account!');
+        return view('register');
 
-
+    }
 }
