@@ -1,19 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Rental Buku || Profile</title>
-    {{-- link css from boostrap --}}
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+@extends('layouts.main')
 
-</head>
-<body>
-    <p>Profile</p>
+@section('title', 'Profile')
 
-    {{-- link javascript from boostrap --}}
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-</body>
-</html>
+@section('content')
+    <p>profile Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia rerum, fuga praesentium debitis aliquid possimus, non necessitatibus nobis, reprehenderit ea repellendus ducimus aut enim distinctio numquam in consequuntur nam quis vitae modi ratione maxime molestias. Molestias nam ea dicta iusto voluptatem placeat, odio ipsum possimus, obcaecati ducimus excepturi aliquam nobis aut reiciendis ipsam? Esse quod vitae veniam aliquam suscipit quibusdam iste natus beatae. Consectetur ipsa iste quam nulla iure asperiores deleniti autem harum sequi doloremque? Ab perspiciatis ut necessitatibus ipsa magnam! Qui deleniti possimus aut sunt aliquid velit labore? Quibusdam temporibus tenetur repellendus nostrum eligendi laboriosam suscipit beatae, libero ab.</p>
+@endsection

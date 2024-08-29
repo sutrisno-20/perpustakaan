@@ -1,19 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Rental Buku || Dashboard</title>
-    {{-- link css from boostrap --}}
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+@extends('layouts.main')
 
-</head>
-<body>
-    <p>Dashboard </p>
+@section('title', 'Dashboard')
 
-    {{-- link javascript from boostrap --}}
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-</body>
-</html>
+@section('content')
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi distinctio quisquam non maxime dolor rerum officiis voluptas, iste natus mollitia! Assumenda necessitatibus rerum, similique dolor porro recusandae amet voluptate deserunt mollitia aliquid quia magni iure, asperiores labore est distinctio. Expedita, natus. Architecto cum consectetur illo doloribus hic similique culpa, enim ipsam excepturi dolorum in impedit maiores, sed sapiente praesentium vero quas dolorem molestias quae beatae sint, natus rem. Accusantium minus tempora explicabo dicta consequatur animi magnam aliquid qui sunt soluta tempore at totam consectetur, corrupti cupiditate incidunt velit accusamus adipisci deleniti rerum quas! Deserunt minus ipsum mollitia neque, facilis consectetur libero maxime eligendi doloribus expedita beatae, velit ullam architecto voluptatibus natus. Nostrum, modi! Vero eum facere ad autem, dignissimos necessitatibus, iure earum a laboriosam, officiis quidem ullam inventore blanditiis itaque cupiditate rem corrupti dolorem saepe veniam fuga velit officia nesciunt! Excepturi quod, labore aut, adipisci provident veritatis modi porro unde numquam esse praesentium nobis vero. Eaque est eos odit iure dolor asperiores, repudiandae atque qui nisi numquam quod error distinctio in odio ad tempore! Dolorum illum error aliquam minima libero corporis cum rem neque sapiente magni omnis expedita porro autem repellendus fugiat unde minus consequuntur aperiam, vel amet aut animi accusamus. Ad, mollitia. Aut quos neque dolore ipsam libero alias repellat aspernatur cumque autem nam facere pariatur velit magni dolorum consectetur beatae fuga, nesciunt itaque, amet atque. Atque voluptatibus odio fugit, reiciendis officia ex eum dicta quo et nemo expedita eos natus minima dolore numquam ipsam deleniti culpa unde perferendis possimus temporibus. At numquam explicabo illum vel similique odio iusto mollitia. Nihil quis voluptatem tenetur quaerat, error ex repudiandae magnam id vero. Maxime magni tempore blanditiis ea tempora magnam iure est dolor voluptates? Omnis voluptates voluptatem delectus voluptate molestiae laborum temporibus nisi et quo corrupti quibusdam, sunt debitis ut nulla eveniet hic est cupiditate eligendi</p>
+@endsection

@@ -33,6 +33,7 @@ class AuthController extends Controller
 
             // check, is user actived?
             if(Auth::user()->status != 'active'){
+                // if user not active will direct to login
                 Auth::logout();
                 $r->session()->invalidate();
                 $r->session()->regenerateToken();
